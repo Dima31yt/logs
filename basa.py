@@ -1,7 +1,7 @@
 import vk_api
 from vk_api.longpoll import VkLongPoll, VkEventType
 
-main_token = '63ef3cec673e19ba9c4fb90199abff41b8286e23754e945f9ea401aceb7bea07db29c3a3b9a2ad2657c18'
+main_token = '8068696abcf156f04d438685bc17d21867eed97411ca90bf38512ab8d57e76b56afb3ae29b0887ebbb481'
 
 vk_session = vk_api.VkApi(token = main_token)
 longpoll = VkLongPoll(vk_session)
@@ -41,7 +41,6 @@ for event in longpoll.listen():
 									kpad58.close()
 									kpad8 = open('baza.txt','w')
 									klad7 = kpad8.write(klad57 + '\n' + msgl) 
-									sender(id, f'Готово!')
 									kpad8.close()
 
 									if msg in ['стоп']:
